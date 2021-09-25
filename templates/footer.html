@@ -1,0 +1,10 @@
+{% set footer = site.get('/footer') %}
+{% if footer.enabled %}
+<!-- BEGIN [Footer] ----------------------------------------------------------------->
+<footer class="footer">
+    <div class="content {{ footer.css_content_class }}">
+        {{ footer.content }}
+    </div>
+</footer>
+<!-- END [Footer] ----------------------------------------------------------------->
+{% endif %}

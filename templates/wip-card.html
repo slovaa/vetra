@@ -1,0 +1,25 @@
+<div class="column">
+    <div class="card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <p style="font-size: 2rem;"><i class="fa {{ card.icon_slug }}"></i></p>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">
+                        <a href="{{ card.link }}" target="_blank" rel="noopener">{{ card.work }}</a>
+                    </p>
+                    <p class="subtitle is-6">{{ card.attribution }}</p>
+                    {{ card.body }}
+                </div>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <div class="tags card-footer-item">
+                {% for lang in card.languages %}
+                <span class="tag is-info is-light is-rounded">{{ lang }}</span>
+                {% endfor %}
+            </div>
+        </footer>
+    </div>
+</div>

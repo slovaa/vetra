@@ -1,0 +1,19 @@
+<!-- BEGIN [Main] ----------------------------------------------------------------->
+<main class="container">
+    <article class="column is-10 is-offset-1">
+
+{% include 'summary.html' %}
+
+{% if bag("globals.is_under_construction") %}
+{% include 'omw.html' %}
+{% endif %}
+
+{% include 'translations.html' %}
+
+<hr>
+
+{% include 'why.html' %}
+
+    </article>
+</main>
+<!-- END [Main] ----------------------------------------------------------------->
