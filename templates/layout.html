@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>{{ this.title }}</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ seo_description }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:site_name" content="{{ this.title }}">
+  <meta property="og:title" content="Biblical Resources | {{ this.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://slovanova.org">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+{% block body %}{% endblock %}
+
+</body>
+
+</html>

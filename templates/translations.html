@@ -1,0 +1,21 @@
+{% set translations = site.get('/translations') %}
+<!-- BEGIN [Translations] ----------------------------------------------------------------->
+<section class="section">
+
+    <div class="block has-text-centered">
+        <p class="title">
+            <i class="{{ translations.fontawesome }}"></i>&nbsp;{{ translations.title }}
+        </p>
+    </div>
+
+    <div class="columns is-variable">
+
+{% set cards = site.query('/wip-cards').include_undiscoverable(true).all() %}
+{% for card in cards %}
+{% include 'wip-card.html' %}
+{% endfor %}
+
+    </div>
+
+</section>
+<!-- END [Translations] ----------------------------------------------------------------->

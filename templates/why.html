@@ -1,0 +1,9 @@
+{% set why = site.get('/why') %}
+<!-- BEGIN [Why] ----------------------------------------------------------------->
+<section class="section">
+    <h2 class="title">{{ why.title }}</h2>
+    <div class="content">
+        {{ why.content }}
+    </div>
+</section>
+<!-- END [Why] ----------------------------------------------------------------->

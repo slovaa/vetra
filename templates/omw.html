@@ -1,0 +1,20 @@
+{% set omw = site.get('/omw') %}
+<!-- BEGIN [Under-Construction] ----------------------------------------------------------------->
+<section class="hero is-warning is-bold is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <h1 class="title"><i class="fa fa-exclamation-triangle"></i>&nbsp;Under Construction</h1>
+                </div>
+                <div class="column is-half has-text-right">
+                    <div class="tag is-dark is-medium">{{ omw.eta }}</div>
+                </div>
+            </div>
+
+{{ omw.content }}
+
+        </div>
+    </div>
+</section>
+<!-- END [Under-Construction] ----------------------------------------------------------------->
