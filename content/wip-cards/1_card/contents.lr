@@ -1,14 +1,11 @@
 work: Ephesians Series
 ---
-attribution: Gary DeLashmutt    
+attribution: Gary DeLashmutt
 ---
-link: https://teachings.dwellcc.org/?SeriesID=109&author%5B%5D=2
+link: https://teachings.dwellcc.org/series/109
 ---
-icon_slug: fa-files-o
----
-body: The _quick_ brown **fox** jumped `over` the lazy dog.
+body:
 ---
 languages:
-French
-Russian
-Spanish
+---
+icon_slug:
